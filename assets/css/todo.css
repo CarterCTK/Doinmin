@@ -1,0 +1,249 @@
+html {
+	height: 100%;
+}
+
+body{
+	background: url('../img/grey.png') repeat center;
+	min-height: 100%;
+	position: relative;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: normal;
+	color: black;
+	border: 3px solid #8c8c8c;
+}
+
+#logo {
+	height: 5%;
+	width: 10%;
+	margin: 1%;
+}
+
+.input {
+	text-align: center;
+	max-width: 60%;
+	margin: 2% auto;
+}
+
+#task {
+	
+	display: inline-block;
+	font-size: 2em;
+	padding: 2%;
+	max-width: 68%;
+	outline: none;
+	border: 2px solid #cccccc;
+	font-weight: normal;
+	font-family: 'Istok Web', sans-serif;
+}
+
+#add {
+	display: inline-block;
+	font-size: 2em;
+	font-weight: normal;
+	padding: 2%;
+	font-family: 'Istok Web', sans-serif;
+	max-width: 28%;
+	
+	outline: none;
+	border: 2px solid #cccccc;
+/*	background: radial-gradient(circle at bottom right,  #e6e6e6, #fff);
+	background: -webkit-radial-gradient(circle at bottom right,  #e6e6e6, #fff);
+	background: -o-radial-gradient(circle at bottom right, #e6e6e6, #fff);
+	background: -moz-radial-gradient(circle at bottom right,  #e6e6e6, #fff);
+	background: -ms-radial-gradient(circle at bottom right,  #e6e6e6, #fff);*/
+	background: url('../img/grey.png') repeat center;
+
+	color: #808080;
+	text-shadow: 2px #404040;
+}
+
+.container {
+	max-width: 50%;
+	margin: 1% auto;
+	text-align: left;
+}
+
+ul {
+	list-style: none;
+	font-size: 2em;
+}
+
+li {
+	margin-top: 1%;
+	font-size: 1em;
+}
+
+.time {
+	font-size: 0.8em;
+	max-width: 20%;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	background: black;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #f2f2f2;
+}
+
+.closePop {
+	max-width: 20%;
+	position: absolute;
+	font-size: 3em;
+	left: 2%;
+	top: 2%;
+}
+
+#message {
+	max-width: 50%;
+	position: absolute;
+	right: 40%;
+	top: 30%;
+	font-size: 4em;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+#me {
+	max-width: 50%;
+	position: absolute;
+	bottom: 2%;
+	left: 1.5%;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+#me a {
+	color: black;
+}
+
+.help-icon {
+	position: absolute;
+	max-width: 30%;
+	bottom: 2%;
+	right: 1.5%;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.help {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1;
+	max-width: 100%;
+	font-size: 1.5em;
+	background: url('../img/grey.png') repeat center;
+	border: 3px solid #8c8c8c;
+	transition: 4s ease-in;
+}
+
+.close-icon {
+	padding: 1%;
+}
+
+.instruct {
+	padding: 1% 8% 4% 8%;
+}
+
+@media only screen and (max-width: 1060px) {
+	
+	.input {
+		margin-top: 5%;
+	}
+
+	#task, #add {
+		font-size: 1.4em;
+	}
+
+	#logo {
+		width: 12%;
+		height: 5%;
+	}
+
+	.container {
+		max-width: 70%;
+	}
+
+	.instruct {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	.input {
+		margin-top: 10%;
+		max-width: 80%;
+	}
+
+	#task, #add {
+		font-size: 1.2em;
+	}
+
+	li {
+		font-size: 0.8em;
+	}
+
+	.help-icon, #me {
+		font-size: 0.7em;
+	}
+
+	#logo {
+		width: 20%;
+		height: 5%;
+		position: relative;
+		left: 38%;
+		margin-top: 4%;
+	}
+
+	/*h1 {
+		margin: 1% auto;
+		font-size: 3em;
+	}*/
+
+	#message {
+		font-size: 2em;
+	}
+
+	.help, .closePop {
+		font-size: 1em;
+	}
+
+}
+
+@media only screen and (max-width: 440px) {
+	#task, #add {
+		font-size: 0.9em;
+	}
+
+	#logo {
+		position: relative;
+		left: 38%;
+		margin-top: 4%;
+		width: 20%;
+	}
+
+	/*h1 {
+		font-size: 2em;
+		margin: 2% auto;
+	}*/
+
+	.container {
+		max-width: 90%;
+	}
+
+	li {
+		font-size: 0.6em;
+	}
+
+}

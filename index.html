@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doinmin</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/todo.css">
+	<script type="text/javascript" src="assets/js/lib/jquery-3.1.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Istok+Web|Ubuntu" rel="stylesheet">
+	<script src="https://use.fontawesome.com/7fa60b6c2a.js"></script>
+</head>
+<body>
+<img src="assets/img/logo.png" id="logo">
+<div class="input">
+		<input type="text" id="task" name="todo" placeholder="Your task">
+		<button id="add">ADD IT</button>
+</div>
+
+
+
+<div class="container">
+	
+	<div id="after"></div>
+	
+	<ul>
+		<!-- <li><span class="delete">X</span> <span class="start">S</span> <span class="task">Code ToDo</span></li>
+		<li><span class="delete">X</span> <span class="start">S</span> <span class="task">Read two books</span></li>
+		<li><span class="delete">X</span> <span class="start">S</span> <span class="task">Run</span></li> -->		
+	</ul>
+
+
+</div>
+
+<div class="popup">
+	<div class="closePop"><i class="fa fa-times" aria-hidden="true"></i></div>
+	<div id="message"><p>Time up.</p></div>
+</div>
+
+<div class="help">
+	<div class="close-icon"><i class="fa fa-times" aria-hidden="true"></i></div>
+	<div class="clear"></div>
+	<div class="instruct">
+	<p>Doinmin helps you achieve more.<br><br>Alotting time to your tasks helps you get better results.</p>
+	<p>Once you have alotted a certain amount of minutes to a task, click <i class='fa fa-play' aria-hidden='true'></i> to start.</p>
+	<p>Click <i class="fa fa-times" aria-hidden="true"></i> to delete the task.</p></div>
+</div>
+
+<div id="me">Created By: <a href="http://www.ayushdevelops.com" target="_blank">Ayush Bahuguna</a></div>
+<div class="help-icon"><i class="fa fa-question" aria-hidden="true"></i> How To</div>
+<audio src="assets/audio/bell.mp3" id="audio"></audio>
+<script type="text/javascript" src="assets/js/todo.js"></script>
+</body>
+</html>
