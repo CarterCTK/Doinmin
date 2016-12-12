@@ -7,3 +7,4 @@ It helps you get better results.
 Moreover, it also helps you to deal with procrastination.
 The app is not responsive because there is a main feature which doesn't work on android or ios platforms.
 Further improvments to the app are welcome.
+Here' the link to the app: http://doinmin.com/
